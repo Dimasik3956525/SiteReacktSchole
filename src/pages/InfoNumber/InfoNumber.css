@@ -1,0 +1,15 @@
+.infoNumber {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #D52027;
+}
+
+.infoNumber span {
+    margin: 0;
+    color: #141024;
+    font-size: 15px;
+}
+.infoNumber h1 {
+    font-size: 80px;
+}

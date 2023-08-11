@@ -1,0 +1,26 @@
+.headerInfo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #FFFFFF;
+    background-color: #141024;
+    margin-top: 39px;
+}
+
+.headerInfoLeft{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+.headerInfoRight img {
+    width: 500px;
+}
+
+.headerInfoLeft button {
+    background-color: #D52027;
+    color: #FFFFFF;
+    height: 80px;
+    width: 260px;
+    margin-top: 25px;
+    margin-bottom: 350px;
+}

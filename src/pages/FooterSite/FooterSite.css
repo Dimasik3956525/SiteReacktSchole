@@ -1,0 +1,28 @@
+.App-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #FFFFFF;
+    background-color: #141024;
+    padding: 20px 0;
+}
+
+.footerBlockLeft {
+    display: flex;
+    flex-direction: column;
+
+}
+.footerBlockLeft span {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.footerBlockRight {
+    display: flex;
+    flex-direction: column;
+
+}
+.footerBlockRight h1 {
+    margin: 0;
+}
+

@@ -1,0 +1,55 @@
+.priceList {
+    margin-top: 100px;
+
+}
+
+.priceBlocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.priceBlock {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Add color transition */
+    color: #000;
+    margin: 40px;
+    height: 250px;
+}
+
+.priceBlock:hover {
+    background-color: #141024;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.priceBlock h3 {
+    font-size: 28px;
+}
+
+.priceBlock span {
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.priceBlock button {
+    margin-top: 15px;
+    background-color: #D52027;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.priceBlock button:hover {
+    background-color: #B31520;
+}
+
