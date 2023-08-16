@@ -7,3 +7,25 @@
 .infoEnd span {
     font-size: 15px;
 }
+@media screen and (max-width: 767px) {
+    .infoEnd {
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .infoEnd1 {
+        margin-left: 10px;
+    }
+    .infoEnd span {
+        font-size: calc(12px + 2 * ((100vw - 320px) / 448));
+
+    }
+    .infoEnd h1 {
+        font-size: calc(15px + 2 * ((100vw - 320px) / 448));
+
+    }
+    .infoEnd1 h1 {}
+    font-size: calc(14px + 2 * ((100vw - 320px) / 448));
+
+}

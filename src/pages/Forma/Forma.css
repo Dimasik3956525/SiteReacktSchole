@@ -5,12 +5,8 @@
     background-color: #D52027;
     color: #fff;
     padding: 30px;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-
-
 .discountInfo h2 {
     font-size: 24px;
     width: 60%;
@@ -73,6 +69,35 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+@media (max-width: 768px) {
+    .discountBlock {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .discountInfo h2 {
+       width: 100%;
+        font-size: calc(15px + 2 * ((100vw - 320px) / 448));
+
+    }
+    .discountInfo p {
+        font-size: calc(10px + 2 * ((100vw - 320px) / 448));
+    }
+
+    .discountForm {
+        justify-content: flex-end;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.5s ease, transform 1.5s ease;
+    }
+
+    .discountForm.active {
+        animation: slideIn 1s ease-in-out forwards;
+    }
+
 }
 
 

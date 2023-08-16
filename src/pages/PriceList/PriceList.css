@@ -1,25 +1,24 @@
 .priceList {
     margin-top: 100px;
-
 }
 
 .priceBlocks {
     display: flex;
-    justify-content: space-between;
+
+    align-items: center; /* Выравнивание по центру */
     margin-top: 30px;
     text-align: center;
 }
 
 .priceBlock {
-    width: calc(33.33% - 20px);
+    width: 100%; /* Занимает всю ширину */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Add color transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     color: #000;
-    margin: 40px;
-    height: 250px;
+    margin-bottom: 20px; /* Уменьшаем отступ снизу */
 }
 
 .priceBlock:hover {
@@ -29,17 +28,16 @@
 }
 
 .priceBlock h3 {
-    font-size: 28px;
+    font-size: 24px; /* Уменьшаем размер заголовка */
 }
 
 .priceBlock span {
-    font-size: 16px;
-    margin-top: 10px;
-
+    font-size: 14px; /* Уменьшаем размер текста */
+    margin-top: 5px; /* Уменьшаем отступ сверху */
 }
 
 .priceBlock button {
-    margin-top: 15px;
+    margin-top: 10px; /* Уменьшаем отступ сверху */
     background-color: #D52027;
     color: #fff;
     padding: 8px 16px;
@@ -47,9 +45,41 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Занимает всю ширину */
 }
 
 .priceBlock button:hover {
     background-color: #B31520;
 }
+
+@media screen and (max-width: 768px) {
+
+
+    .priceBlock {
+        width: 75%;
+
+    }
+
+    .priceBlock h3 {
+        font-size: 28px;
+    }
+
+    .priceBlock span {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .priceBlock button {
+        margin-top: 15px;
+        width: 71%;
+    }
+    .priceBlocks {
+        flex-direction: column; /* Изменяем направление блоков на вертикальное */
+    }
+.priceList h1 {
+    margin-left: 10px;
+}
+
+}
+
 

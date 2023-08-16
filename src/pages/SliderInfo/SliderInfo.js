@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import Modal from 'react-modal';
 import './SliderInfo.css';
 import Slider from 'react-slick';
@@ -15,7 +15,7 @@ const SliderInfo = () => {
         { src: men1, name: 'Максим Петров',
             text: 'Преподаватель по программированию.',
             details: 'Дополнительный текст для Максима Петрова' },
-        { src: men2, name: 'Константин Назаров',
+        { src: men2, name: 'Констя Назаров',
             text: 'Преподаватель по робототехнике.',
             details: 'Дополнительный текст для Константина Назарова' },
         { src: girl1, name: 'Ирина Лайм',
@@ -30,11 +30,24 @@ const SliderInfo = () => {
     ];
 
 
+    const [slidesToShow, setSlidesToShow] = useState(window.innerWidth < 769 ? 2 : 3);
+
+    const updateSlidesToShow = () => {
+        setSlidesToShow(window.innerWidth < 769 ? 2 : 3);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateSlidesToShow);
+        return () => {
+            window.removeEventListener("resize", updateSlidesToShow);
+        };
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 1500,
-        slidesToShow: 3,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -53,9 +66,11 @@ const SliderInfo = () => {
     return (
         <div className="SliderInfo" id='Trener'>
             <div className="slider">
-                <h1>Профессиональные тренеры</h1>
+
+                    <h1>Профессиональные тренеры</h1>
+
                 <div className="slider-container">
-                    <Slider {...settings}>
+                    <Slider {...settings} slidesToShow={slidesToShow}>
                         {images.map((image, index) => (
                             <div key={index} className="teacher-item">
                                 <img src={image.src} alt={`Slide ${index + 1}`} />

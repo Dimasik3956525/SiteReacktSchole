@@ -4,23 +4,63 @@
     flex-direction: row;
     color: #FFFFFF;
     background-color: #141024;
-    margin-top: 39px;
+    margin-top: 80px;
+
 }
 
-.headerInfoLeft{
-    display: flex;
+.headerInfoLeft {
+
     flex-direction: column;
-    width: 27%;
+    width: 100%; /* Занимает всю ширину */
+    text-align: center;
+    padding: 0 15px; /* Добавляем внутренние отступы по бокам */
 }
+
 .headerInfoRight img {
-    width: 500px;
+    max-width: 100%; /* Устанавливаем максимальную ширину изображения */
+    height: auto;
+    margin-top: 20px;
 }
 
 .headerInfoLeft button {
     background-color: #D52027;
     color: #FFFFFF;
-    height: 80px;
-    width: 260px;
-    margin-top: 25px;
-    margin-bottom: 350px;
+    height: 60px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .headerInfo {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 40px;
+        margin-top: 40px;
+    }
+
+    .headerInfoLeft {
+        width: 27%;
+        padding-top: 5%;
+        text-align: left; /* Возвращаем выравнивание текста влево */
+        display: flex;
+    }
+    .headerInfoLeft h1 {
+        font-size: calc(10px + 2 * ((100vw - 320px) / 448));
+    }
+    .headerInfoLeft span {
+        font-size: calc(10px + 2 * ((100vw - 320px) / 448));
+    }
+    .headerInfoRight img {
+        width: 200px;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .headerInfoLeft button {
+        height: 35px;
+        width: 100px;
+        margin-top: 25px;
+        font-size: calc(7px + 2 * ((100vw - 320px) / 448));
+    }
 }

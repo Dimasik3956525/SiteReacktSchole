@@ -11,18 +11,33 @@
 .footerBlockLeft {
     display: flex;
     flex-direction: column;
-
 }
+
 .footerBlockLeft span {
     color: #FFFFFF;
     font-size: 16px;
 }
+
 .footerBlockRight {
     display: flex;
     flex-direction: column;
-
 }
+
 .footerBlockRight h1 {
     margin: 0;
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .App-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerBlockLeft,
+    .footerBlockRight {
+        margin-bottom: 20px;
+    }
+}
+
 
