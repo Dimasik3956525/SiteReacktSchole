@@ -1,24 +1,25 @@
 .slider-container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
+
 }
 
-
+.SliderInfo {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Предотвращаем переполнение за границы */
+}
 .slick-dots li button:before {
     font-size: 14px;
     color: #fff;
-
 }
-
 .slick-dots li.slick-active button:before {
     color: #ff0000;
 }
-
 .slick-slide img {
-    width: 280px    ;
+    width: 280px ;
     height: 350px;
 }
-
 .modal {
     position: fixed;
     top: 0;
@@ -76,10 +77,10 @@
         height: 250px;
     }
     .slider-container {
-        margin-left: 10px;
+        gap: 10px;
     }
     .slider h1 {
-      margin-left:10px ;
+        margin-left:10px ;
     }
 
 }
