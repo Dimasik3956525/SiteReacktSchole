@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavMenu.css';
-
+//
 const NavMenu = () => {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);

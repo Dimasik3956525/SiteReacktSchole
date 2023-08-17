@@ -55,6 +55,7 @@
     .Nav-menu {
         position: fixed;
         padding-top: 0px;
+        width: 85%;
 
     }
     .mobile-menu-button {
