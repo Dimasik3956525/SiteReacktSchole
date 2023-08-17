@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SiteReacktSchole/static/css/main.38c5e40c.css",
-    "main.js": "/SiteReacktSchole/static/js/main.a5d8a93b.js",
+    "main.css": "/SiteReacktSchole/static/css/main.b5d21105.css",
+    "main.js": "/SiteReacktSchole/static/js/main.53793e1a.js",
     "static/js/787.aa97f029.chunk.js": "/SiteReacktSchole/static/js/787.aa97f029.chunk.js",
     "static/media/Group211.png": "/SiteReacktSchole/static/media/Group211.9356f546acfec4439c1d.png",
     "static/media/men1.jpg": "/SiteReacktSchole/static/media/men1.4c5a8283edb646e12a72.jpg",
@@ -14,12 +14,12 @@
     "static/media/slick.ttf": "/SiteReacktSchole/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/SiteReacktSchole/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/SiteReacktSchole/index.html",
-    "main.38c5e40c.css.map": "/SiteReacktSchole/static/css/main.38c5e40c.css.map",
-    "main.a5d8a93b.js.map": "/SiteReacktSchole/static/js/main.a5d8a93b.js.map",
+    "main.b5d21105.css.map": "/SiteReacktSchole/static/css/main.b5d21105.css.map",
+    "main.53793e1a.js.map": "/SiteReacktSchole/static/js/main.53793e1a.js.map",
     "787.aa97f029.chunk.js.map": "/SiteReacktSchole/static/js/787.aa97f029.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38c5e40c.css",
-    "static/js/main.a5d8a93b.js"
+    "static/css/main.b5d21105.css",
+    "static/js/main.53793e1a.js"
   ]
 }
