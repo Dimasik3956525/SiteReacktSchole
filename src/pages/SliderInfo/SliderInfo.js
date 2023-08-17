@@ -11,6 +11,7 @@ import girl2 from '../../img/girl2.jpg';
 import girl3 from '../../img/girl3.jpg';
 
 const SliderInfo = () => {
+    console.log('main-1')
     const images = [
         { src: men1, name: 'Максим Петров',
             text: 'Преподаватель по программированию.',
