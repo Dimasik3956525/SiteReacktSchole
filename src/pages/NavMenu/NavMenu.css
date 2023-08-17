@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 
 
 }
@@ -37,12 +37,18 @@
     display: none;
 
 }
-.navLink a {
+
+.navLink span {
     font-size: 24px;
     margin: 0;
     text-decoration: none;
     color: #FFFFFF;
     cursor: pointer;
+    transition: color 0.3s ease; /* Добавили анимацию изменения цвета при ховере */
+}
+
+.navLink span:hover {
+    color: #D52027; /* Изменяем цвет при ховере */
 }
 
 @media screen and (max-width: 768px) {

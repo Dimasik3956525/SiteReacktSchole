@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-direction: row;
     font-size: 10px;
+    gap: 40px;
 }
 .infoEnd span {
     font-size: 15px;

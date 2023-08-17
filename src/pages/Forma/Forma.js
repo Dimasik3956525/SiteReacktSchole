@@ -76,7 +76,18 @@ const Forma = () => {
             <div className={`discountForm ${isVisible ? 'active' : ''}`}>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Имя" value={formData.name} onChange={handleChange} />
-                    <input type="tel" name="phone" placeholder="Номер телефона" value={formData.phone} onChange={handleChange} />
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Номер телефона"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        onKeyPress={(e) => {
+                            if (isNaN(Number(e.key))) {
+                                e.preventDefault();
+                            }
+                        }}
+                    />
                     <input type="text" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
                     <button type="submit">Оставить заявку</button>
                 </form>

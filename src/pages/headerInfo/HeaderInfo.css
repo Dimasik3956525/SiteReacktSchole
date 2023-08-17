@@ -1,24 +1,25 @@
 .headerInfo {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    align-items: center; /* Добавили выравнивание по вертикали */
     color: #FFFFFF;
     background-color: #141024;
     margin-top: 80px;
-
 }
 
 .headerInfoLeft {
-
+    display: flex;
     flex-direction: column;
-    width: 100%; /* Занимает всю ширину */
+    align-items: center; /* Выравнивание по центру */
     text-align: center;
-    padding: 0 15px; /* Добавляем внутренние отступы по бокам */
+    padding: 0 15px;
+    width: 50%; /* Уменьшили ширину левого блока */
 }
 
 .headerInfoRight img {
-    max-width: 100%; /* Устанавливаем максимальную ширину изображения */
+    max-width: 100%;
     height: auto;
+    max-height: 500px; /* Ограничили максимальную высоту изображения */
     margin-top: 20px;
 }
 
@@ -29,6 +30,7 @@
     width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
